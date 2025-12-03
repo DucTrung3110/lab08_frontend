@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     'bootstrap/dist/css/bootstrap.css'
   ],
   modules: [],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml', '/robots.txt']
+    }
+  },
   app: {
     head: {
       title: 'Nuxt.js Lab 8',
