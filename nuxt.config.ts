@@ -2,16 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  ssr: false,
   css: [
     'bootstrap/dist/css/bootstrap.css'
   ],
   modules: [],
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/robots.txt']
-    }
-  },
   app: {
     head: {
       title: 'Nuxt.js Lab 8',
